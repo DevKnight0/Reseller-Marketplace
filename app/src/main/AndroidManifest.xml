@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.valarmorghulis.firebaseauth">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_app_icon_round"
+        android:label="2HM"
+        android:roundIcon="@mipmap/ic_app_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <activity android:name=".ResetPassActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activity_splash_screen"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".DrawerActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".SignUpActivity"
+            android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

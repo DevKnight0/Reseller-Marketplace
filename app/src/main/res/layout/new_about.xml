@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SellFragment">
+
+
+    <!--    <ImageView-->
+<!--        android:id="@+id/user_imageview"-->
+<!--        android:layout_width="249dp"-->
+<!--        android:layout_height="225dp"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="60dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="@drawable/p1" -->
+<!--        android:visibility="gone"/>-->
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        android:background="@drawable/bacround_gradient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </android.support.constraint.ConstraintLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="255dp"
+        android:layout_height="255dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/p1"
+        app:civ_border_color="#454242"
+        app:civ_border_width="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_textview"
+        app:layout_constraintVertical_bias="0.159">
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/occupation_textview"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="8dp"-->
+        <!--            android:layout_marginEnd="8dp"-->
+        <!--            android:text="CSE Student"-->
+        <!--            android:textSize="20sp"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/workplace_textview"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="8dp"-->
+        <!--            android:layout_marginEnd="8dp"-->
+        <!--            android:text="Key Biscaine National Park"-->
+        <!--            android:textSize="18sp"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintHorizontal_bias="0.497"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/occupation_textview" />-->
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="362dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/email_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.126"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/workplace_textview"
+                app:srcCompat="@drawable/ic_mail_black_24dp" />
+
+            <TextView
+                android:id="@+id/email_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:paddingEnd="10dp"
+                android:text="support@2hm.com"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.031"
+                app:layout_constraintStart_toEndOf="@+id/email_imageview"
+                app:layout_constraintTop_toBottomOf="@+id/workplace_textview" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+            <ImageView
+                android:id="@+id/phone_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.126"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email_imageview"
+                app:srcCompat="@drawable/ic_fab_github" />
+
+            <TextView
+                android:id="@+id/phone_textview"
+                android:layout_width="239dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="184dp"
+                android:text="Cortex790"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.031"
+                app:layout_constraintStart_toEndOf="@+id/phone_imageview"
+                app:layout_constraintTop_toBottomOf="@+id/email_textview" />
+
+        </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+
+                    <ImageView
+                        android:id="@+id/video_imageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.126"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/phone_imageview"
+                        app:srcCompat="@drawable/ic_fab_twitter" />
+
+                    <TextView
+                        android:id="@+id/video_textview"
+                        android:layout_width="242dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="184dp"
+                        android:text="@string/twitter"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.031"
+
+                        app:layout_constraintTop_toBottomOf="@+id/phone_textview" />
+
+                </LinearLayout>
+
+        <!-- Circular Image View  -->
+
+        <!--        <LinearLayout-->
+        <!--            android:id="@+id/linearLayout4"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="8dp"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintHorizontal_bias="0.0"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">-->
+
+
+        <!--            <ImageView-->
+        <!--                android:id="@+id/facebook_imageview"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginStart="8dp"-->
+        <!--                android:layout_marginTop="20dp"-->
+        <!--                android:layout_marginEnd="8dp"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintHorizontal_bias="0.126"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/video_textview"-->
+        <!--                app:srcCompat="@drawable/ic_icon_facebook" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/facebook_textview"-->
+        <!--                android:layout_width="336dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginStart="8dp"-->
+        <!--                android:layout_marginTop="20dp"-->
+        <!--                android:layout_marginEnd="184dp"-->
+        <!--                android:text="http://facebook.com/amandab"-->
+        <!--                android:textSize="18sp"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintHorizontal_bias="0.031"-->
+        <!--                app:layout_constraintStart_toEndOf="@+id/facebook_imageview"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/video_textview" />-->
+
+        <!--        </LinearLayout>-->
+
+        <!--        <LinearLayout-->
+        <!--            android:id="@+id/linearLayout5"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="8dp"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintHorizontal_bias="0.0"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/linearLayout4">-->
+
+
+        <!--            <ImageView-->
+        <!--                android:id="@+id/twitter_imageview"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginStart="8dp"-->
+        <!--                android:layout_marginTop="20dp"-->
+        <!--                android:layout_marginEnd="8dp"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintHorizontal_bias="0.126"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/facebook_textview"-->
+        <!--                app:srcCompat="@drawable/ic_twitter_white" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/twitter_textview"-->
+        <!--                android:layout_width="336dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginStart="8dp"-->
+        <!--                android:layout_marginTop="20dp"-->
+        <!--                android:layout_marginEnd="184dp"-->
+        <!--                android:text="\@mandabuz48"-->
+        <!--                android:textSize="18sp"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintHorizontal_bias="0.031"-->
+        <!--                app:layout_constraintStart_toEndOf="@+id/twitter_imageview"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/facebook_textview" />-->
+
+        <!--        </LinearLayout>-->
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/name_textview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="monospace"
+        android:text="Aankik Koshti"
+        android:textAlignment="center"
+        android:textColor="@color/blackish_blue"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/circleImageView"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@+id/circleImageView"
+        app:layout_constraintTop_toBottomOf="@+id/circleImageView" />
+
+
+</android.support.constraint.ConstraintLayout>
